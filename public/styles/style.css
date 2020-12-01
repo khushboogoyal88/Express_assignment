@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main, form {
+    display:grid;
+    align-items: center;
+    justify-items: center;
+}
+input[readonly]{
+    background-color: lightgray;
+}
+
+table{
+    border-collapse: collapse;
+    margin-bottom:1em;
+}
+
+table, th, td{
+    border:solid black 1px;
+    padding:0.5em;
+    margin-top: .5rem;
+    text-align: center;
+}
+
+thead{
+    background-color:cornsilk;
+}
+
+button{background-color: cornsilk;
+    width:20em;
+    height: 2em;
+    margin: .10rem;
+
+}
+
+p.error{
+    color: red;
+    padding:1em;
+}
+
+p.info{
+    border: solid green 2px;
+    padding:1em;
+}
+
+h1.error{
+    color:red;
+}

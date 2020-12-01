@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <link rel="stylesheet" href="/styles/style.css" type="text/css">
+</head>
+<body>
+    <main>
+        <h1><%= header %></h1>
+        <form action="<%= action %>" method="POST">
+            <div>
+                <p>
+                    <label for="number">Number</label>
+                    <input type="text" id="number" name="number" size="5" value="<%= number.value %>" <%= number.readonly %>>
+                </p>
+                <p>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" size="15" value="<%= name.value %>" <%= name.readonly %>>
+                </p>
+                <p>
+                    <label for="year">Year</label>
+                    <input type="text" id="year" name="year" size="25" value="<%= year.value %>" <%= year.readonly %>>
+                </p>
+                <p>
+                    <label for="quantity">Quantity</label>
+                    <input type="text" id="quantity" name="quantity" size="10" value="<%= quantity.value %>" <%= quantity.readonly %>>
+                </p>
+                <p>
+                    <label for="genre">Genre</label>
+                    <input type="text" id="genre" name="genre" size="10" value="<%= genre.value %>" <%= genre.readonly %>>
+                </p>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <a href="/"><button>Menu</button></a>
+    </main>
+</body>
+</html>
