@@ -68,9 +68,9 @@ function createDataStorage() {
 
   async function updateStorage(game) {
     let storage = await readStorage();
-    const oldGame = storage.find((oldGm) => oldGm.number == game.number);
-    if (oldGame) {
-      Object.assign(oldGame, {
+    const oldgame = storage.find((oldGm) => oldGm.number == game.number);
+    if (oldgame) {
+      Object.assign(oldgame, {
         number: +game.number,
         name: game.name,
         year: game.year,
@@ -83,6 +83,7 @@ function createDataStorage() {
       return false;
     }
   }
+
 
   class Datastorage {
     get CODES() {

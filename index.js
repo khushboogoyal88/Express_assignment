@@ -39,7 +39,7 @@ app.get("/all", (req, res) =>
 app.get("/getGame", (req, res) =>
   res.render("getGame", {
     title: "Get",
-    header: "Get Game",
+    header: "Get",
     action: "/getGame",
   })
 );
@@ -145,12 +145,13 @@ function sendStatusPage(res, status, title = "Status", header = "Status") {
   return res.render("statusPage", { title, header, status });
 }
 
+// function to create game
 function createGame(game) {
   return {
     number: game.number,
-    firstname: game.name,
-    lastname: game.year,
-    department: game.quantity,
-    salary: game.genre,
+    name: game.name,
+    year: game.year,
+    quantity: game.quantity,
+    genre: game.genre,
   };
 }

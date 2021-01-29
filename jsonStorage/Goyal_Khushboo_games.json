@@ -47,12 +47,5 @@
         "year": 2012,
         "quantity": 7,
         "genre": "board game"
-    },
-    {
-        "number": 100,
-        "name": "Khushboo Goyal",
-        "year": "2000",
-        "quantity": "1",
-        "genre": "wds"
     }
 ]
